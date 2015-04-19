@@ -1,0 +1,18 @@
+class customer goods
+1. Attributes:
+manufacturer country, date of manufacture, validity period, weight, box type, colour, size, eating, not eating,
+smell, form, consistency, density, material, for what purpose, for hum dedicated (kids,adults,animals),
+box colour, presence of package, quality, price, name, organic/not organic, hand made/manufacture, toxicity,
+mark,package quantity, frozen
+
+2. Method : 
+buy, change the production date, boil,  crumble, take from  shelf, return, put in the basket, 
+put in bag,  throw,  change, check expiration date, donate, sell, use, steal, rearrange,
+
+
+
+	
+
+
+
+

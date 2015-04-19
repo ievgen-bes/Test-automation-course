@@ -1,0 +1,11 @@
+class Touch screen devices
+1. Attributes:
+device (phone,tablet), weight  (100,250,500gr.), screen size (4,5,7 inches), year of manufacture,colour, 
+volume of the battery, glass type, housing material, charger type, camera, number of speakers, 
+wifi module, GPS module, headphone connector, lock screen button, volume up button, "home" button, Bluetooth module, 
+gyroscope, flash, size of the slot for SIM card, number of slots for SIM, memorycard slot, type memorycard,
+2. Method:
+calling, auto-rotate screen, gyroscope, auto lock screen when talking, incoming SMS, MMS, email,
+spelling autocorrect, call forwarding, automatically increase the volume, greeting, geo-tagging of photos,
+light sensor, update firmware,  location, auto power saving mode,correcting date and time,
+tap the display

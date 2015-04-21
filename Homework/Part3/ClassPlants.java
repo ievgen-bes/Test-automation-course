@@ -1,4 +1,4 @@
-public class Plants
+public abstract class Plants
                           {
 				private int illumination; 
 				private int humidity; 

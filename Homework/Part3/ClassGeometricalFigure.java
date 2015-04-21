@@ -1,4 +1,4 @@
-public class GeometricalFigure
+public abstract class GeometricalFigure
                           {
 				private int diametre; 
 				private int radius; 

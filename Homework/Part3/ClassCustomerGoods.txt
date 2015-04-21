@@ -5,4 +5,4 @@ quality, price, name, organic/not organic, hand made/manufacture, toxicity,
 mark,package quantity, frozen
 different for all three entities:
 name, product type,  barcode, composition, presence of package, box colour, smell, mode of production,
-cooking type, 
+cooking type

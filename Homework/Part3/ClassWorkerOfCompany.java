@@ -1,4 +1,4 @@
-public class Worker
+public abstract class Worker
                           {
 				private int nationality; 
 				private int skin colour; 

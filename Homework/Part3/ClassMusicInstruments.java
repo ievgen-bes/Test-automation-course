@@ -1,4 +1,4 @@
-public class music instruments
+public abstract class music instruments
                           {
 				private int mark; 
 				private int pedals; 

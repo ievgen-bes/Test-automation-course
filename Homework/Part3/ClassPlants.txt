@@ -1,0 +1,7 @@
+same for all three entities: 
+leaf, roots, bark, petal, seeds, fruit, class of plant( tree, bush, flower), pistils, stamens,
+leaf shape, place (water, earth, rock), toxic, therapeutic, edible, name, culture, type of plant 
+(foliage, flowering, succulents, cactus), flower, country, humid colour
+different for all three entities:
+leaf shape, blossom, country, climate, temperature, humidity, illumination, colour seeds, 
+growth, reproduction, propagation

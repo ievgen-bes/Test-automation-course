@@ -1,0 +1,6 @@
+same for all three entities: 
+length, width, height, mark of music instrument, name, pedals, string material, volume,
+housing material, hammers, number of hammers, string, number of strings
+different for all three entities:
+cover, speaker, place for music notes, glow keys, membrane, functions of upload new melodies, 
+resonant soundboard, canvas, rim

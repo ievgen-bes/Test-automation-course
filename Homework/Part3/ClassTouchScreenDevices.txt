@@ -1,0 +1,8 @@
+same for all three entities: 
+device , weight, year of manufacture,colour, name, manufacture country,
+volume of the battery, glass type, housing material, charger type, camera, number of speakers, 
+wifi module,  headphone connector, lock screen button, volume up button, 
+different for all three entities:
+size, flash, size of the slot for SIM card, Bluetooth module, GPS module, 3G, 4G, talk, antena,
+memorycard slot, type memorycard, number of slots for SIM, "home" button,  
+gyroscope, 

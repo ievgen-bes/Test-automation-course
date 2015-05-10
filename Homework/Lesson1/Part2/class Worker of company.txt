@@ -1,0 +1,13 @@
+class worker
+Attribute:
+age of workers (18-45), gender (M/W), name, position, tardiness, awards, progress, working instrument,
+overtime, work experience, work time, payment, uniform, working place, heals, physical abilities, character,
+education, ability to participate with others, professional skills, criminal records,
+height, weight,eye colour, hair colour, skin colour, nationality
+
+Method:
+sink, run errands, perform functional duties, skip work day , take sick day, late for work,
+exceeded plan to work, take vacation, enjoy working tools, eat at lunchtime, be promoted, be promoted,
+work at two positions, work in two shifts, business trip
+
+

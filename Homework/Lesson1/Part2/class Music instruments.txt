@@ -1,0 +1,11 @@
+class music instruments
+1. Attributes:
+mark of music instrument, name,  weight, number of pedals (2,3), number of keys (10,50,100), housing material (metal, wood, plastic), 
+top cover, hammers, number of hammers, string, number of strings,  roll, resonant soundboard,  
+recorder, speaker, string material, volume, place for music notes, glow keys, colour of keys, 
+functions of upload new melodies, springs for keys, 
+2. Method
+will turn off after the play, run playing tutorial, move pedal when play, 
+move keys when play, make sound, record melodies, learning to play, charging, 
+battery signal, string broke, open cover, close cover, check sound, 
+

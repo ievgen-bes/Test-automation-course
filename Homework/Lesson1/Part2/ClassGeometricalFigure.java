@@ -1,0 +1,30 @@
+public class GeometricalFigure
+                          {
+				private int diametre; 
+				private int radius; 
+				private int anles; 
+				private int volume;
+				private int square;
+				private int grade;
+				private int oordinate;
+				private int simetric;
+				private int haight;
+				private int perimeter;
+				private int vector;
+				private boolean isChangeOordinat;
+public int getVolume(){}
+				private boolean isCalculateVector;
+public int getGrade(){}
+				private boolean isMoveRadius;
+public int getPerimetr(){}
+				private boolean isCalculateSquare;
+public int getVectoor(){}
+				private boolean isTurnAngles;
+public int getOordinate(){}
+				private boolean isDrawMediane;
+public int getAngles(){}	
+				private boolean isDetermineScale;
+public int getDiametre(){}					
+				private boolean isDrawCircle;
+public int getHaight(){}	
+							}

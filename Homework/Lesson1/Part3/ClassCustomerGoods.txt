@@ -1,0 +1,8 @@
+same for all three entities: 
+manufacturer country, date of manufacture, validity period, weight, box type, colour, size, eating, not eating,
+ form, consistency, density, material, for what purpose, for hum dedicated (kids,adults,animals),
+quality, price, name, organic/not organic, hand made/manufacture, toxicity,
+mark,package quantity, frozen
+different for all three entities:
+name, product type,  barcode, composition, presence of package, box colour, smell, mode of production,
+cooking type

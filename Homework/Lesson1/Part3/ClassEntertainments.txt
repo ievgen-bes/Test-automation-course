@@ -1,0 +1,7 @@
+same for all three entities: 
+name of entertainment,time of entertainment, age),type of entertainment, 
+place of entertainment,number of participants, duration of entertainment, equipment,  
+season, country of entertainment
+paid, free,
+different for all three entities:
+coach, traumatic, before preparation, skills

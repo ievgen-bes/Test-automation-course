@@ -1,8 +1,0 @@
-same for all three entities: 
-age of workers, gender, name, position, tardiness, awards, progress, 
-overtime, work time, payment, uniform, working place, heals, physical abilities, character,
-ability to participate with others, height, weight,eye colour, hair colour, skin colour, nationality
-different for all three entities:
-head, department, signs documents, education, professional skills, criminal records, working instrument,
-work experience
-

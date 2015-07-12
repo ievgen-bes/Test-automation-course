@@ -1,4 +1,0 @@
-same for all three entities: 
-length, width, height, lines, perimeter, outline, name, volume, height, square, circumference, perimeter
-different for all three entities:
-diameter, radius, shape, angles, grade, scale, median, oordinate

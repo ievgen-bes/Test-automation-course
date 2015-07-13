@@ -1,12 +1,11 @@
 package myApplicationTest;
 
 import static org.junit.Assert.*;
-
+import org.junit.rules.Timeout;
 import java.util.Arrays;
-
+import org.junit.Rule;
 import static org.hamcrest.CoreMatchers.is;
 import myApplicationTest.MainEmployeeTestRunner;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -133,5 +132,8 @@ public class TestAllTestsCase {
 				        }
 				        assertThat(1, is(1));
 			}
+				 @Rule
+				 public Timeout timeout = Timeout.seconds(10);
+
 			}
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="myApplicationTest.TestSuiteAllTests">
+        <methods>
+          <include name="testFinished"/>
+          <include name="testStarted"/>
+          <include name="EmployeeTest"/>
+          <include name="EmployeeTest5"/>
+          <include name="EmployeeTest9"/>
+        </methods>
+      </class> <!-- myApplicationTest.TestSuiteAllTests -->
+      <class name="myApplicationTest.TestNameIDGroup">
+        <methods>
+          <include name="EmployeeTest_D"/>
+        </methods>
+      </class> <!-- myApplicationTest.TestNameIDGroup -->
+      <class name="myApplicationTest.TestNameTest1">
+        <methods>
+          <include name="EmployeeTest"/>
+          <include name="testStarted"/>
+          <include name="testFinished"/>
+        </methods>
+      </class> <!-- myApplicationTest.TestNameTest1 -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

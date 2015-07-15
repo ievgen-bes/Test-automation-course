@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Name(failed)">
+    <classes>
+      <class name="myApplicationTest.TestNameIDGroup">
+        <methods>
+          <include name="EmployeeTest_D"/>
+        </methods>
+      </class> <!-- myApplicationTest.TestNameIDGroup -->
+    </classes>
+  </test> <!-- Name(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

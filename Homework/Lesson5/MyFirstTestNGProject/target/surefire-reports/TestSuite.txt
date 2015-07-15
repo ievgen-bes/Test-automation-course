@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 2.825 sec <<< FAILURE!
+EmployeeTest_D(myApplicationTest.TestNameIDGroup)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1001] but found [100001]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotSame(Assert.java:492)
+	at org.testng.Assert.assertSame(Assert.java:443)
+	at org.testng.Assert.assertSame(Assert.java:453)
+	at myApplicationTest.TestNameIDGroup.EmployeeTest_D(TestNameIDGroup.java:31)
+
+EmployeeTest(myApplicationTest.TestNameTest1)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [WillSmitt] but found [Will Smitt]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at myApplicationTest.TestNameTest1.EmployeeTest(TestNameTest1.java:16)
+
+EmployeeTest5(myApplicationTest.TestSuiteAllTests)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1001] but found [100001]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotSame(Assert.java:492)
+	at org.testng.Assert.assertSame(Assert.java:443)
+	at org.testng.Assert.assertSame(Assert.java:453)
+	at myApplicationTest.TestSuiteAllTests.EmployeeTest5(TestSuiteAllTests.java:56)
+
+EmployeeTest9(myApplicationTest.TestSuiteAllTests)  Time elapsed: 0.01 sec  <<< FAILURE!
+java.lang.AssertionError: expected [1000000.0] but found [974.709]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:209)
+	at org.testng.Assert.assertEquals(Assert.java:222)
+	at myApplicationTest.TestSuiteAllTests.EmployeeTest9(TestSuiteAllTests.java:85)
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://derp-bear.herokuapp.com/" />
+<title>1</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">1</td></tr>
+</thead><tbody>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Thank you for submitting the form</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=label</td>
+	<td>First Name</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li/fieldset/ol/li[2]/label</td>
+	<td>Last Name</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li/fieldset/ol/li[3]/label</td>
+	<td>Email</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li/fieldset/ol/li[4]/label</td>
+	<td>Website</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li/fieldset/ol/li[5]/label</td>
+	<td>Select a Pet</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='results']/header/ul/li[2]/fieldset/legend</td>
+	<td>Date</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[2]/fieldset/ol/li/label</td>
+	<td>Date of Birth</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='results']/header/ul/li[3]/fieldset/legend</td>
+	<td>exact:What is your Sex?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='results']/header/ul/li[4]/fieldset/legend</td>
+	<td>exact:How do you get to work?</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='results']/header/ul/li[5]/fieldset/legend</td>
+	<td>Password Example</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[5]/fieldset/ol/li/label</td>
+	<td>Example Password</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='results']/header/ul/li[6]/fieldset/legend</td>
+	<td>Terms of Agreement</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//section[@id='results']/header/ul/li[6]/fieldset/ol/li/label</td>
+	<td>Free Text Field</td>
+</tr>
+</tbody></table>
+</body>
+</html>

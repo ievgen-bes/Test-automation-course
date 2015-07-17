@@ -1,0 +1,55 @@
+import java.util.concurrent.TimeUnit;
+import java.util.Date;
+import java.io.File;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.*;
+import static org.openqa.selenium.OutputType.*;
+
+public class  {
+    public static void main(String[] args) throws Exception {
+        FirefoxDriver wd;
+        wd = new FirefoxDriver();
+        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wd.get("http://www.calculator.net/mortgage-calculator.html");
+        wd.findElement(By.id("chouseprice")).click();
+        wd.findElement(By.id("chouseprice")).clear();
+        wd.findElement(By.id("chouseprice")).sendKeys("100000");
+        wd.findElement(By.id("cdownpayment")).click();
+        wd.findElement(By.id("cdownpayment")).clear();
+        wd.findElement(By.id("cdownpayment")).sendKeys("30");
+        wd.findElement(By.id("cloanterm")).click();
+        wd.findElement(By.id("cloanterm")).clear();
+        wd.findElement(By.id("cloanterm")).sendKeys("40");
+        wd.findElement(By.id("cinterestrate")).click();
+        wd.findElement(By.id("cinterestrate")).clear();
+        wd.findElement(By.id("cinterestrate")).sendKeys("2.15");
+        wd.findElement(By.id("cpropertytaxes")).click();
+        wd.findElement(By.id("cpropertytaxes")).clear();
+        wd.findElement(By.id("cpropertytaxes")).sendKeys("1.1");
+        wd.findElement(By.id("chomeins")).click();
+        wd.findElement(By.id("chomeins")).clear();
+        wd.findElement(By.id("chomeins")).sendKeys("1248");
+        wd.findElement(By.id("cothercost")).click();
+        wd.findElement(By.id("cothercost")).clear();
+        wd.findElement(By.id("cothercost")).sendKeys("2899");
+        if (!wd.findElement(By.xpath("//div[@id='content']/table[1]/tbody/tr/td[1]/table/tbody/tr[11]/td[2]/select//option[6]")).isSelected()) {
+            wd.findElement(By.xpath("//div[@id='content']/table[1]/tbody/tr/td[1]/table/tbody/tr[11]/td[2]/select//option[6]")).click();
+        }
+        wd.findElement(By.cssSelector("input[type=\"image\"]")).click();
+        if (!wd.findElement(By.tagName("html")).getText().contains("Monthly Pay: $217.54")) {
+            System.out.println("verifyTextPresent failed");
+        }
+        wd.quit();
+    }
+    
+    public static boolean isAlertPresent(FirefoxDriver wd) {
+        try {
+            wd.switchTo().alert();
+            return true;
+        } catch (NoAlertPresentException e) {
+            return false;
+        }
+    }
+}

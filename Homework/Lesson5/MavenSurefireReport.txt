@@ -1,0 +1,2 @@
+я обыскал и нашел только одну вменяемую статью но я не думаю что это именно Maven Surefire или  как-то не так понял)
+http://prettyprint.me/prettyprint.me/2010/01/14/maven-code-quality-dashboard-and-teamcity/index.html

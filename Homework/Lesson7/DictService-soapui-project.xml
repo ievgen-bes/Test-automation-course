@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="689651a8-c821-47dc-830e-7519534d5f88" activeEnvironment="Default" name="DictService" soapui-version="5.2.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="cdd96d50-ad2d-4737-86c2-2147afd40138" wsaVersion="NONE" name="DictServiceSoap12" type="wsdl" bindingName="{http://services.aonaware.com/webservices/}DictServiceSoap12" soapVersion="1_2" anonymous="optional" definition="http://services.aonaware.com/DictService/DictService.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint></con:endpoints><con:operation id="345152c5-f6b0-4060-9727-89d6e5e7139d" isOneWay="false" action="http://services.aonaware.com/webservices/Define" name="Define" bindingOperationName="Define" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7c138414-e52b-4184-8574-d0525725e5c1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:Define>\r
+         <!--Optional:-->\r
+         <web:word>world</web:word>\r
+      </web:Define>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DefineRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="44b3d372-a5bd-4422-b3ed-d9d8aeb28c6b" isOneWay="false" action="http://services.aonaware.com/webservices/DefineInDict" name="DefineInDict" bindingOperationName="DefineInDict" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="814a6588-a9ae-42d5-b183-5d5b1313fa6d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:DefineInDict>\r
+         <!--Optional:-->\r
+         <web:dictId>gazetteer</web:dictId>\r
+         <!--Optional:-->\r
+         <web:word>world</web:word>\r
+      </web:DefineInDict>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DefineInDictRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4e1a0fbe-136f-490f-9136-1b3fa2540b1b" isOneWay="false" action="http://services.aonaware.com/webservices/DictionaryInfo" name="DictionaryInfo" bindingOperationName="DictionaryInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4c9056be-e27c-4080-b2a1-aa12f73d6f5d" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:DictionaryInfo>\r
+         <!--Optional:-->\r
+         <web:dictId>elements</web:dictId>\r
+      </web:DictionaryInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DictionaryInfoRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="4a84bcc0-a346-4ceb-86a3-d4c58fdc314a" isOneWay="false" action="http://services.aonaware.com/webservices/DictionaryList" name="DictionaryList" bindingOperationName="DictionaryList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="547afcbb-299d-45b8-8b02-8d1e36a6ab09" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:DictionaryList/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DictionaryListRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="21239772-9e49-40f8-9705-9343fc6ccc23" isOneWay="false" action="http://services.aonaware.com/webservices/DictionaryListExtended" name="DictionaryListExtended" bindingOperationName="DictionaryListExtended" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="15fe74b7-29b2-44b0-8124-7e8ecb7fefdf" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:DictionaryListExtended/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DictionaryListExtendedRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="83762bd3-de0c-4fc6-81cd-baadbce46bdf" isOneWay="false" action="http://services.aonaware.com/webservices/Match" name="Match" bindingOperationName="Match" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3364437b-b80d-4099-b028-2bf5b69b6359" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:Match>\r
+         <!--Optional:-->\r
+         <web:word>world</web:word>\r
+         <!--Optional:-->\r
+         <web:strategy>exact<</web:strategy>\r
+      </web:Match>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/MatchRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="985b3b37-cbb8-4c29-96a4-47ab13e03c13" isOneWay="false" action="http://services.aonaware.com/webservices/MatchInDict" name="MatchInDict" bindingOperationName="MatchInDict" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c0d8fce3-3456-41c5-8fdb-42d7e4eb8668" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:MatchInDict>\r
+         <!--Optional:-->\r
+         <web:dictId>gcide</web:dictId>\r
+         <!--Optional:-->\r
+         <web:word>word</web:word>\r
+         <!--Optional:-->\r
+         <web:strategy>substring</web:strategy>\r
+      </web:MatchInDict>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/MatchInDictRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="3fbc3093-27cf-4b98-bdea-6f85208bb5db" isOneWay="false" action="http://services.aonaware.com/webservices/ServerInfo" name="ServerInfo" bindingOperationName="ServerInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c9981f6a-4f0c-4b1c-8778-5b0cc18c0917" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:ServerInfo/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/ServerInfoRequest"/></con:call></con:operation><con:operation id="e3744a42-8848-4c76-809b-dd0df0fc6ec8" isOneWay="false" action="http://services.aonaware.com/webservices/StrategyList" name="StrategyList" bindingOperationName="StrategyList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5354984e-cbad-42d1-a2b8-249b3a6c1670" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:StrategyList/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/StrategyListRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="26f20aaa-fa15-414a-925e-14bc9fc641b2" wsaVersion="NONE" name="DictServiceSoap" type="wsdl" bindingName="{http://services.aonaware.com/webservices/}DictServiceSoap" soapVersion="1_1" anonymous="optional" definition="http://services.aonaware.com/DictService/DictService.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://services.aonaware.com/DictService/DictService.asmx?WSDL"><con:part><con:url>http://services.aonaware.com/DictService/DictService.asmx?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://services.aonaware.com/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://services.aonaware.com/webservices/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>Word Dictionary Web Service</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://services.aonaware.com/webservices/">
+      <s:element name="ServerInfo">
+        <s:complexType/>
+      </s:element>
+      <s:element name="ServerInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServerInfoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DictionaryList">
+        <s:complexType/>
+      </s:element>
+      <s:element name="DictionaryListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DictionaryListResult" type="tns:ArrayOfDictionary"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDictionary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Dictionary" nillable="true" type="tns:Dictionary"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Dictionary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DictionaryListExtended">
+        <s:complexType/>
+      </s:element>
+      <s:element name="DictionaryListExtendedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DictionaryListExtendedResult" type="tns:ArrayOfDictionary"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DictionaryInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dictId" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DictionaryInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DictionaryInfoResult" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Define">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="word" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DefineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DefineResult" type="tns:WordDefinition"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WordDefinition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Word" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Definitions" type="tns:ArrayOfDefinition"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDefinition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Definition" nillable="true" type="tns:Definition"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Definition">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Word" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Dictionary" type="tns:Dictionary"/>
+          <s:element minOccurs="0" maxOccurs="1" name="WordDefinition" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DefineInDict">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dictId" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="word" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DefineInDictResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DefineInDictResult" type="tns:WordDefinition"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StrategyList">
+        <s:complexType/>
+      </s:element>
+      <s:element name="StrategyListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StrategyListResult" type="tns:ArrayOfStrategy"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStrategy">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Strategy" nillable="true" type="tns:Strategy"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Strategy">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Match">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="word" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="strategy" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MatchResult" type="tns:ArrayOfDictionaryWord"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDictionaryWord">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DictionaryWord" nillable="true" type="tns:DictionaryWord"/>
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DictionaryWord">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DictionaryId" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="Word" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="MatchInDict">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dictId" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="word" type="s:string"/>
+            <s:element minOccurs="0" maxOccurs="1" name="strategy" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MatchInDictResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MatchInDictResult" type="tns:ArrayOfDictionaryWord"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string"/>
+      <s:element name="ArrayOfDictionary" nillable="true" type="tns:ArrayOfDictionary"/>
+      <s:element name="WordDefinition" nillable="true" type="tns:WordDefinition"/>
+      <s:element name="ArrayOfStrategy" nillable="true" type="tns:ArrayOfStrategy"/>
+      <s:element name="ArrayOfDictionaryWord" nillable="true" type="tns:ArrayOfDictionaryWord"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ServerInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:ServerInfo"/>
+  </wsdl:message>
+  <wsdl:message name="ServerInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:ServerInfoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListSoapIn">
+    <wsdl:part name="parameters" element="tns:DictionaryList"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListSoapOut">
+    <wsdl:part name="parameters" element="tns:DictionaryListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListExtendedSoapIn">
+    <wsdl:part name="parameters" element="tns:DictionaryListExtended"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListExtendedSoapOut">
+    <wsdl:part name="parameters" element="tns:DictionaryListExtendedResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DictionaryInfo"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DictionaryInfoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DefineSoapIn">
+    <wsdl:part name="parameters" element="tns:Define"/>
+  </wsdl:message>
+  <wsdl:message name="DefineSoapOut">
+    <wsdl:part name="parameters" element="tns:DefineResponse"/>
+  </wsdl:message>
+  <wsdl:message name="DefineInDictSoapIn">
+    <wsdl:part name="parameters" element="tns:DefineInDict"/>
+  </wsdl:message>
+  <wsdl:message name="DefineInDictSoapOut">
+    <wsdl:part name="parameters" element="tns:DefineInDictResponse"/>
+  </wsdl:message>
+  <wsdl:message name="StrategyListSoapIn">
+    <wsdl:part name="parameters" element="tns:StrategyList"/>
+  </wsdl:message>
+  <wsdl:message name="StrategyListSoapOut">
+    <wsdl:part name="parameters" element="tns:StrategyListResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MatchSoapIn">
+    <wsdl:part name="parameters" element="tns:Match"/>
+  </wsdl:message>
+  <wsdl:message name="MatchSoapOut">
+    <wsdl:part name="parameters" element="tns:MatchResponse"/>
+  </wsdl:message>
+  <wsdl:message name="MatchInDictSoapIn">
+    <wsdl:part name="parameters" element="tns:MatchInDict"/>
+  </wsdl:message>
+  <wsdl:message name="MatchInDictSoapOut">
+    <wsdl:part name="parameters" element="tns:MatchInDictResponse"/>
+  </wsdl:message>
+  <wsdl:message name="ServerInfoHttpGetIn"/>
+  <wsdl:message name="ServerInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListHttpGetIn"/>
+  <wsdl:message name="DictionaryListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionary"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListExtendedHttpGetIn"/>
+  <wsdl:message name="DictionaryListExtendedHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionary"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryInfoHttpGetIn">
+    <wsdl:part name="dictId" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="DefineHttpGetIn">
+    <wsdl:part name="word" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="DefineHttpGetOut">
+    <wsdl:part name="Body" element="tns:WordDefinition"/>
+  </wsdl:message>
+  <wsdl:message name="DefineInDictHttpGetIn">
+    <wsdl:part name="dictId" type="s:string"/>
+    <wsdl:part name="word" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="DefineInDictHttpGetOut">
+    <wsdl:part name="Body" element="tns:WordDefinition"/>
+  </wsdl:message>
+  <wsdl:message name="StrategyListHttpGetIn"/>
+  <wsdl:message name="StrategyListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfStrategy"/>
+  </wsdl:message>
+  <wsdl:message name="MatchHttpGetIn">
+    <wsdl:part name="word" type="s:string"/>
+    <wsdl:part name="strategy" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="MatchHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionaryWord"/>
+  </wsdl:message>
+  <wsdl:message name="MatchInDictHttpGetIn">
+    <wsdl:part name="dictId" type="s:string"/>
+    <wsdl:part name="word" type="s:string"/>
+    <wsdl:part name="strategy" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="MatchInDictHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionaryWord"/>
+  </wsdl:message>
+  <wsdl:message name="ServerInfoHttpPostIn"/>
+  <wsdl:message name="ServerInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListHttpPostIn"/>
+  <wsdl:message name="DictionaryListHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionary"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryListExtendedHttpPostIn"/>
+  <wsdl:message name="DictionaryListExtendedHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionary"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryInfoHttpPostIn">
+    <wsdl:part name="dictId" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="DictionaryInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string"/>
+  </wsdl:message>
+  <wsdl:message name="DefineHttpPostIn">
+    <wsdl:part name="word" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="DefineHttpPostOut">
+    <wsdl:part name="Body" element="tns:WordDefinition"/>
+  </wsdl:message>
+  <wsdl:message name="DefineInDictHttpPostIn">
+    <wsdl:part name="dictId" type="s:string"/>
+    <wsdl:part name="word" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="DefineInDictHttpPostOut">
+    <wsdl:part name="Body" element="tns:WordDefinition"/>
+  </wsdl:message>
+  <wsdl:message name="StrategyListHttpPostIn"/>
+  <wsdl:message name="StrategyListHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfStrategy"/>
+  </wsdl:message>
+  <wsdl:message name="MatchHttpPostIn">
+    <wsdl:part name="word" type="s:string"/>
+    <wsdl:part name="strategy" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="MatchHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionaryWord"/>
+  </wsdl:message>
+  <wsdl:message name="MatchInDictHttpPostIn">
+    <wsdl:part name="dictId" type="s:string"/>
+    <wsdl:part name="word" type="s:string"/>
+    <wsdl:part name="strategy" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="MatchInDictHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfDictionaryWord"/>
+  </wsdl:message>
+  <wsdl:portType name="DictServiceSoap">
+    <wsdl:operation name="ServerInfo">
+      <wsdl:documentation>Show remote server information</wsdl:documentation>
+      <wsdl:input message="tns:ServerInfoSoapIn"/>
+      <wsdl:output message="tns:ServerInfoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <wsdl:documentation>Returns a list of available dictionaries</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryListSoapIn"/>
+      <wsdl:output message="tns:DictionaryListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <wsdl:documentation>Returns a list of advanced dictionaries (e.g. translating dictionaries)</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryListExtendedSoapIn"/>
+      <wsdl:output message="tns:DictionaryListExtendedSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <wsdl:documentation>Show information about the specified dictionary</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryInfoSoapIn"/>
+      <wsdl:output message="tns:DictionaryInfoSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <wsdl:documentation>Define given word, returning definitions from all dictionaries</wsdl:documentation>
+      <wsdl:input message="tns:DefineSoapIn"/>
+      <wsdl:output message="tns:DefineSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <wsdl:documentation>Define given word, returning definitions from specified dictionary</wsdl:documentation>
+      <wsdl:input message="tns:DefineInDictSoapIn"/>
+      <wsdl:output message="tns:DefineInDictSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <wsdl:documentation>Return list of all available strategies on the server</wsdl:documentation>
+      <wsdl:input message="tns:StrategyListSoapIn"/>
+      <wsdl:output message="tns:StrategyListSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <wsdl:documentation>Look for matching words in all dictionaries using the given strategy</wsdl:documentation>
+      <wsdl:input message="tns:MatchSoapIn"/>
+      <wsdl:output message="tns:MatchSoapOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <wsdl:documentation>Look for matching words in the specified dictionary using the given strategy</wsdl:documentation>
+      <wsdl:input message="tns:MatchInDictSoapIn"/>
+      <wsdl:output message="tns:MatchInDictSoapOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DictServiceHttpGet">
+    <wsdl:operation name="ServerInfo">
+      <wsdl:documentation>Show remote server information</wsdl:documentation>
+      <wsdl:input message="tns:ServerInfoHttpGetIn"/>
+      <wsdl:output message="tns:ServerInfoHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <wsdl:documentation>Returns a list of available dictionaries</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryListHttpGetIn"/>
+      <wsdl:output message="tns:DictionaryListHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <wsdl:documentation>Returns a list of advanced dictionaries (e.g. translating dictionaries)</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryListExtendedHttpGetIn"/>
+      <wsdl:output message="tns:DictionaryListExtendedHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <wsdl:documentation>Show information about the specified dictionary</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryInfoHttpGetIn"/>
+      <wsdl:output message="tns:DictionaryInfoHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <wsdl:documentation>Define given word, returning definitions from all dictionaries</wsdl:documentation>
+      <wsdl:input message="tns:DefineHttpGetIn"/>
+      <wsdl:output message="tns:DefineHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <wsdl:documentation>Define given word, returning definitions from specified dictionary</wsdl:documentation>
+      <wsdl:input message="tns:DefineInDictHttpGetIn"/>
+      <wsdl:output message="tns:DefineInDictHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <wsdl:documentation>Return list of all available strategies on the server</wsdl:documentation>
+      <wsdl:input message="tns:StrategyListHttpGetIn"/>
+      <wsdl:output message="tns:StrategyListHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <wsdl:documentation>Look for matching words in all dictionaries using the given strategy</wsdl:documentation>
+      <wsdl:input message="tns:MatchHttpGetIn"/>
+      <wsdl:output message="tns:MatchHttpGetOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <wsdl:documentation>Look for matching words in the specified dictionary using the given strategy</wsdl:documentation>
+      <wsdl:input message="tns:MatchInDictHttpGetIn"/>
+      <wsdl:output message="tns:MatchInDictHttpGetOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DictServiceHttpPost">
+    <wsdl:operation name="ServerInfo">
+      <wsdl:documentation>Show remote server information</wsdl:documentation>
+      <wsdl:input message="tns:ServerInfoHttpPostIn"/>
+      <wsdl:output message="tns:ServerInfoHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <wsdl:documentation>Returns a list of available dictionaries</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryListHttpPostIn"/>
+      <wsdl:output message="tns:DictionaryListHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <wsdl:documentation>Returns a list of advanced dictionaries (e.g. translating dictionaries)</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryListExtendedHttpPostIn"/>
+      <wsdl:output message="tns:DictionaryListExtendedHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <wsdl:documentation>Show information about the specified dictionary</wsdl:documentation>
+      <wsdl:input message="tns:DictionaryInfoHttpPostIn"/>
+      <wsdl:output message="tns:DictionaryInfoHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <wsdl:documentation>Define given word, returning definitions from all dictionaries</wsdl:documentation>
+      <wsdl:input message="tns:DefineHttpPostIn"/>
+      <wsdl:output message="tns:DefineHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <wsdl:documentation>Define given word, returning definitions from specified dictionary</wsdl:documentation>
+      <wsdl:input message="tns:DefineInDictHttpPostIn"/>
+      <wsdl:output message="tns:DefineInDictHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <wsdl:documentation>Return list of all available strategies on the server</wsdl:documentation>
+      <wsdl:input message="tns:StrategyListHttpPostIn"/>
+      <wsdl:output message="tns:StrategyListHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <wsdl:documentation>Look for matching words in all dictionaries using the given strategy</wsdl:documentation>
+      <wsdl:input message="tns:MatchHttpPostIn"/>
+      <wsdl:output message="tns:MatchHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <wsdl:documentation>Look for matching words in the specified dictionary using the given strategy</wsdl:documentation>
+      <wsdl:input message="tns:MatchInDictHttpPostIn"/>
+      <wsdl:output message="tns:MatchInDictHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DictServiceSoap" type="tns:DictServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ServerInfo">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/ServerInfo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/DictionaryList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/DictionaryListExtended" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/DictionaryInfo" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/Define" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/DefineInDict" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/StrategyList" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/Match" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <soap:operation soapAction="http://services.aonaware.com/webservices/MatchInDict" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DictServiceSoap12" type="tns:DictServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ServerInfo">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/ServerInfo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/DictionaryList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/DictionaryListExtended" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/DictionaryInfo" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/Define" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/DefineInDict" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/StrategyList" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/Match" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <soap12:operation soapAction="http://services.aonaware.com/webservices/MatchInDict" style="document"/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DictServiceHttpGet" type="tns:DictServiceHttpGet">
+    <http:binding verb="GET"/>
+    <wsdl:operation name="ServerInfo">
+      <http:operation location="/ServerInfo"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <http:operation location="/DictionaryList"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <http:operation location="/DictionaryListExtended"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <http:operation location="/DictionaryInfo"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <http:operation location="/Define"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <http:operation location="/DefineInDict"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <http:operation location="/StrategyList"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <http:operation location="/Match"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <http:operation location="/MatchInDict"/>
+      <wsdl:input>
+        <http:urlEncoded/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DictServiceHttpPost" type="tns:DictServiceHttpPost">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="ServerInfo">
+      <http:operation location="/ServerInfo"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryList">
+      <http:operation location="/DictionaryList"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryListExtended">
+      <http:operation location="/DictionaryListExtended"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DictionaryInfo">
+      <http:operation location="/DictionaryInfo"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Define">
+      <http:operation location="/Define"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DefineInDict">
+      <http:operation location="/DefineInDict"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StrategyList">
+      <http:operation location="/StrategyList"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Match">
+      <http:operation location="/Match"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MatchInDict">
+      <http:operation location="/MatchInDict"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DictService">
+    <wsdl:documentation>Word Dictionary Web Service</wsdl:documentation>
+    <wsdl:port name="DictServiceSoap" binding="tns:DictServiceSoap">
+      <soap:address location="http://services.aonaware.com/DictService/DictService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DictServiceSoap12" binding="tns:DictServiceSoap12">
+      <soap12:address location="http://services.aonaware.com/DictService/DictService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DictServiceHttpGet" binding="tns:DictServiceHttpGet">
+      <http:address location="http://services.aonaware.com/DictService/DictService.asmx"/>
+    </wsdl:port>
+    <wsdl:port name="DictServiceHttpPost" binding="tns:DictServiceHttpPost">
+      <http:address location="http://services.aonaware.com/DictService/DictService.asmx"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint></con:endpoints><con:operation id="86d2c1b1-2b7b-48ab-9726-fbc3bfc58bd2" isOneWay="false" action="http://services.aonaware.com/webservices/Define" name="Define" bindingOperationName="Define" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ac498a6a-78e7-43c6-91ac-b64a3c565f81" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:Define>\r
+         <!--Optional:-->\r
+         <web:word>?</web:word>\r
+      </web:Define>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/Define"/></con:call></con:operation><con:operation id="3c6eb2d6-dc9d-4bb7-8867-116407d7ee2a" isOneWay="false" action="http://services.aonaware.com/webservices/DefineInDict" name="DefineInDict" bindingOperationName="DefineInDict" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6e20674b-c5b5-4367-80b7-7cca1e8b08a3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:DefineInDict>\r
+         <!--Optional:-->\r
+         <web:dictId>?</web:dictId>\r
+         <!--Optional:-->\r
+         <web:word>?</web:word>\r
+      </web:DefineInDict>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DefineInDict"/></con:call></con:operation><con:operation id="240efb25-3a74-45ef-988c-071c8af4f1c2" isOneWay="false" action="http://services.aonaware.com/webservices/DictionaryInfo" name="DictionaryInfo" bindingOperationName="DictionaryInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4e664fc6-1f29-4caf-8764-b5304b15ed4b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:DictionaryInfo>\r
+         <!--Optional:-->\r
+         <web:dictId>?</web:dictId>\r
+      </web:DictionaryInfo>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictionaryInfo"/></con:call></con:operation><con:operation id="1ffa91c3-14b4-43c5-88e7-58bce177dac8" isOneWay="false" action="http://services.aonaware.com/webservices/DictionaryList" name="DictionaryList" bindingOperationName="DictionaryList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="64b25724-4608-4375-a25b-54f567387e97" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:DictionaryList/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictionaryList"/></con:call></con:operation><con:operation id="1b3c1637-00ea-483c-a399-9cabdc49b685" isOneWay="false" action="http://services.aonaware.com/webservices/DictionaryListExtended" name="DictionaryListExtended" bindingOperationName="DictionaryListExtended" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5f8be392-14ce-4364-8724-b5aeba0f40e4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:DictionaryListExtended/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictionaryListExtended"/></con:call></con:operation><con:operation id="d3d81525-7edd-4f3c-b6aa-0bb3a7a09376" isOneWay="false" action="http://services.aonaware.com/webservices/Match" name="Match" bindingOperationName="Match" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3adc814e-9871-4f67-a48b-cf4794bda8d9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:Match>\r
+         <!--Optional:-->\r
+         <web:word>?</web:word>\r
+         <!--Optional:-->\r
+         <web:strategy>?</web:strategy>\r
+      </web:Match>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/Match"/></con:call></con:operation><con:operation id="9b45b9c8-41c7-4970-9022-543f53255536" isOneWay="false" action="http://services.aonaware.com/webservices/MatchInDict" name="MatchInDict" bindingOperationName="MatchInDict" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0b5360b0-e022-451a-bcfb-ac9942c665d4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:MatchInDict>\r
+         <!--Optional:-->\r
+         <web:dictId>?</web:dictId>\r
+         <!--Optional:-->\r
+         <web:word>?</web:word>\r
+         <!--Optional:-->\r
+         <web:strategy>?</web:strategy>\r
+      </web:MatchInDict>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/MatchInDict"/></con:call></con:operation><con:operation id="03d22bea-2531-439f-9df9-d4bc3cb21568" isOneWay="false" action="http://services.aonaware.com/webservices/ServerInfo" name="ServerInfo" bindingOperationName="ServerInfo" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a3b44037-a39a-49b8-a9df-9261f84e78c9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:ServerInfo/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/ServerInfo"/></con:call></con:operation><con:operation id="67534728-cf94-4549-9ed5-e85b20ab3586" isOneWay="false" action="http://services.aonaware.com/webservices/StrategyList" name="StrategyList" bindingOperationName="StrategyList" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3ba78f30-e4c2-43bd-96a1-391cdd381068" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:StrategyList/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/StrategyList"/></con:call></con:operation></con:interface><con:testSuite id="14e68f48-4227-4e30-89cb-28c32172e155" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="c9a97677-fe0e-45a4-8e0b-9ff25588bb06" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" id="3485cd1a-5bd3-4dac-bdf0-7bf70bf71cd8" name="Define - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DictServiceSoap12</con:interface><con:operation>Define</con:operation><con:request name="Define - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="bd5a3174-88d6-4063-9ba8-9f0b44863260"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:Define>\r
+         <!--Optional:-->\r
+         <web:word>world!20</web:word>\r
+      </web:Define>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1488ba9e-d764-4d89-b555-9e28b3629942" name="SOAP Response"/><con:assertion type="Simple Contains" id="357a2237-9b0d-4abc-a4cd-43022c7e61b1" name="Contains"><con:configuration><token>world!20</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DefineRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="d41d2b4f-0041-41ed-bab7-efcbdee088b0" name="DictionaryInfo - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DictServiceSoap12</con:interface><con:operation>DictionaryInfo</con:operation><con:request name="DictionaryInfo - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="a1c41e4c-49e0-4bd2-9a0d-59fa5efb3ec3"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:DictionaryInfo>\r
+         <!--Optional:-->\r
+         <web:dictId>elements</web:dictId>\r
+      </web:DictionaryInfo>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="1a18b594-966e-4535-ace3-df6432dcfea0" name="SOAP Response"/><con:assertion type="Simple Contains" id="13ca16a8-66a6-46f8-bc3d-1df45283382d" name="Contains"><con:configuration><token>elements</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/DictionaryInfoRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" id="84c4d50e-e070-46bb-8f9d-af8390f2cce8" name="MatchInDict - Request 1"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>DictServiceSoap12</con:interface><con:operation>MatchInDict</con:operation><con:request name="MatchInDict - Request 1" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="082d2dfb-716e-4035-9304-7252eb249b65"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://services.aonaware.com/DictService/DictService.asmx</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://services.aonaware.com/webservices/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <web:MatchInDict>\r
+         <!--Optional:-->\r
+         <web:dictId>gcide</web:dictId>\r
+         <!--Optional:-->\r
+         <web:word>world</web:word>\r
+         <!--Optional:-->\r
+         <web:strategy>substring</web:strategy>\r
+      </web:MatchInDict>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:assertion type="SOAP Response" id="9a9686db-0e5a-4551-9f71-6a2d5c3ed9e7" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.aonaware.com/webservices/DictServiceSoap/MatchInDictRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
